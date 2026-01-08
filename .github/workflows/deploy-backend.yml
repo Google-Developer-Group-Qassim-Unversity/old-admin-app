@@ -26,6 +26,7 @@ jobs:
           export NVM_DIR="$HOME/.nvm"
           # Load NVM manually since this is a non-interactive shell
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          export PATH="$HOME/.local/bin:$PATH"
 
           # Create environment file content
           cat > env_content << EOF
